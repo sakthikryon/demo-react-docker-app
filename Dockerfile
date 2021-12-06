@@ -3,8 +3,8 @@
 # pull the official base image
 FROM node:12.12-alpine
 # set working direction
-WORKDIR /app
-# add `/app/node_modules/.bin` to $PATH
+WORKDIR app
+# add `app/node_modules/.bin` to $PATH
 ENV PATH /app/node_modules/.bin:$PATH
 # install application dependencies
 COPY package.json ./
